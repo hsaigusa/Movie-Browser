@@ -6,10 +6,9 @@ const MovieView = () => {
   const { id } = useParams()
   const [ movieDetails, setMovieDetails ] = useState({})
   const [ isLoading, setIsLoading ] = useState(true)
-  const url = `https://api.themoviedb.org/3/movie/${id}?api_key=01957ee3309bafdb81238954f4159e50&language=en-US`
 
   useEffect(() => {
-    fetch(url)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=01957ee3309bafdb81238954f4159e50&language=en-US`)
       .then(response => response.json())
       .then(data =>{
     setMovieDetails(data)
