@@ -32,10 +32,10 @@ function App() {
           <Home />
         </Route>
         <Route path="/about" component={AboutView} />
-        <Route path="/movies/:id" component={MovieView} />
         <Route path="/search">
           <SearchView keyword={searchText} searchResults={searchResults} />
         </Route>
+        <Route path="/movies/:id" component={MovieView} />
       </Switch>
     </div>
   );

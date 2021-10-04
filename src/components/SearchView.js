@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 
 // TMDB API KEY = 01957ee3309bafdb81238954f4159e50
